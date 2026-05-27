@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber hero section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#f5d76e'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+<body class="bg-black text-white min-h-screen">
+
+
+</head>
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <h1 class="text-2xl font-bold tracking-wide text-white">BARBER<span class="text-yellow-500">PRO</span></h1>
+
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="Index.html" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="Services.html" class="hover:text-yellow-500 transition">Services</a></li>
+      <li><a href="Gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+      <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
+      <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+<!-- Pricing section -->
+<section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <h2 class="text-4xl font-extrabold mb-4">Service Pricing</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mb-16 text-sm md:text-base">
+      Excellent pricing for premium grooming. Choose the treatment and styles that fits your style.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+        <div>
+          <h3 class="text-xl font-bold text-gray-400 tracking-wide uppercase mb-4"> Classic Deal</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white">£35</span>
+            <span class="text-gray-500 text-sm">/cut</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+             High-quality cut tailored to your head shape, including a routine wash.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
+            Select Service
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-10 rounded-xl shadow-2xl hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border-2 border-yellow-500 relative">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black font-bold uppercase tracking-widest text-xs px-3 py-1 rounded-full shadow-md">
+          Most Popular
+        </span>
+
+        <div>
+          <h3 class="text-xl font-bold text-yellow-500 tracking-wide uppercase mb-4">The Executive</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white drop-shadow-[0_0_15px_rgba(234,179,8,0.2)]">£60</span>
+            <span class="text-gray-500 text-sm">/full treatment</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+            Our signature premium haircut combined with a master beard shape and hot towel layout.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-yellow-500 text-black hover:bg-yellow-400 transition shadow-lg shadow-yellow-500/20">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+        <div>
+          <h3 class="text-xl font-bold text-gray-400 tracking-wide uppercase mb-4">Royal Grooming</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white">£95</span>
+            <span class="text-gray-500 text-sm">/package</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+            The ultimate luxury treatment. Haircut, full razor shave, clean face mask, and scalp massage.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
+            Select Service
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>

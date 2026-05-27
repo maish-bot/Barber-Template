@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber hero section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#f5d76e'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Playfair Display', serif;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <h1 class="text-2xl font-bold tracking-wide text-white">BARBER<span class="text-yellow-500">PRO</span></h1>
+
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="Index.html" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="Services.html" class="hover:text-yellow-500 transition">Services</a></li>
+      <li><a href="Gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+      <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
+      <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Gallery Section -->
+<section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-extrabold mb-12">Gallery</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 bordercolor-white">
+
+      <!-- Image 1 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="💈 BEST BARBER TUTORIAL ON YOUTUBE!! MID FADE_ - YouTube.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+ hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="A Cut Above.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+ hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="download (8).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 4 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="download (9).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 5 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="Барбер _мои фото.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 6 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="We always look after our clients.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
+ hover:scale-110 transition duration-300">
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>

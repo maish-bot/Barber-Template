@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber hero section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#f5d76e'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
+
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <h1 class="text-2xl font-bold tracking-wide text-white">BARBER<span class="text-yellow-500">PRO</span></h1>
+
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="Index.html" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="Services.html" class="hover:text-yellow-500 transition">Services</a></li>
+      <li><a href="Gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+      <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
+      <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Services Section -->
+ <section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+  
+    <h2 class="text-4xl font-extrabold mb-16">Our Services</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Card 1 -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+        
+        <!-- Icon -->
+         <div class="flex-1 flex items-center justify-center">
+        <svg class="w-28 h-28 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg" fill="none"
+             stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 18a2 2 0 0 0-4 0"/>
+          <path d="m19 11-2.11-6.657a2 2 0 0 0-2.752-1.148l-1.276.61A2 2 0 0 1 12 4H8.5a2 2 0 0 0-1.925 1.456L5 11"/>
+          <path d="M2 11h20"/>
+          <circle cx="17" cy="18" r="3"/>
+          <circle cx="7" cy="18" r="3"/>
+        </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Premium Haircut</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">Sharp, modern cuts tailored to your style.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+        
+        <!-- Icon -->
+        <div class="flex-1 flex items-center justify-center">
+        <svg class="w-24 h-24 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg" fill="none"
+             stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="6" cy="6" r="3"/>
+          <path d="M8.12 8.12 12 12"/>
+          <path d="M20 4 8.12 15.88"/>
+          <circle cx="6" cy="18" r="3"/>
+          <path d="M14.8 14.8 20 20"/>
+        </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Beard Trim</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">Clean, sharp beard shaping designed to enhance your jawline.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+        
+        <!-- Icon -->
+        <div class="flex-1 flex items-center justify-center">
+        <svg class="w-24 h-24 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg" fill="none"
+             stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"/>
+          <path d="M4 6h.01"/>
+          <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"/>
+          <path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"/>
+          <path d="M12 18h.01"/>
+          <path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"/>
+          <circle cx="12" cy="12" r="2"/>
+          <path d="m13.41 10.59 5.66-5.66"/>
+        </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Hot Towel Shave</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">A luxury grooming experience with steam and precision.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Contact Page</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#f5d76e'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2, h3, label {
+        font-family: 'Playfair Display', serif;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      
+    </style>
+
+</head>
+
+<body class="bg-black text-white min-h-screen">
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <h1 class="text-2xl font-bold tracking-wide text-white">BARBER<span class="text-yellow-500">PRO</span></h1>
+
+    <ul class="hidden md:flex space-x-8 text-white font-medium">
+      <li><a href="Index.html" class="hover:text-yellow-500 transition">Home</a></li>
+      <li><a href="Services.html" class="hover:text-yellow-500 transition">Services</a></li>
+      <li><a href="Gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+      <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
+      <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
+    </ul>
+
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+<!-- Contact Section -->
+
+<section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-extrabold text-center mb-16">Contact Us</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-start">
+
+      <!-- LEFT SIDE: Contact Info -->
+      <div class="space-y-8">
+
+        <!-- Phone -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Phone</h3>
+          <p class="text-gray-300 text-lg">0121 555 7890</p>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Address</h3>
+          <p class="text-gray-300 text-lg">
+            123 Barber Street<br>
+            Oldbury, Birmingham<br>
+            B68 0XX
+          </p>
+        </div>
+
+        <!-- Opening Hours -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Opening Hours</h3>
+          <p class="text-gray-300 text-lg">Mon–Fri: 9am – 7pm</p>
+          <p class="text-gray-300 text-lg">Saturday: 9am – 5pm</p>
+          <p class="text-gray-300 text-lg">Sunday: Closed</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE: Contact Form -->
+      <form class="bg-gray-900 p-8 rounded-xl shadow-lg space-y-6">
+
+        <div>
+          <label class="block text-left font-semibold mb-2">Name</label>
+          <input type="text" class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your Name">
+        </div>
+
+        <div>
+          <label class="block text-left font-semibold mb-2">Email</label>
+          <input type="email" class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your Email">
+        </div>
+
+        <div>
+          <label class="block text-left font-semibold mb-2">Message</label>
+          <textarea class="w-full p-3 rounded-lg bg-gray-800 text-white h-32 focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your Message"></textarea>
+        </div>
+
+        <button class="w-full py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
