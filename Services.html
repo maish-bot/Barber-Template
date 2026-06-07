@@ -24,15 +24,13 @@
         }
       }
     </script>
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
+    <script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenuOverlay");
+    mobileMenu.classList.toggle("hidden");
+  }
 </script>
-    <style>
+ <style>
       /* Apply premium fonts */
       h1, h2, h3 {
         font-family: 'Playfair Display', serif;
@@ -40,7 +38,7 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
-    </style>
+ </style>
 
 </head>
 
@@ -58,8 +56,18 @@
       <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
       <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
     </ul>
-
-    <button class="md:hidden text-white text-3xl">&#9776;</button>
+   <button onclick="toggleMobileMenu()" class="md:hidden text-white text-3xl focus:outline-none">
+      &#9776;
+    </button>
+  </div>
+    <div id="mobileMenuOverlay" class="hidden md:hidden bg-zinc-950 border-b border-yellow-600/30 w-full px-6 py-6 absolute left-0 top-full z-40 shadow-2xl">
+    <ul class="flex flex-col space-y-4 text-white font-medium text-lg">
+      <li><a href="index.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Home</a></li>
+      <li><a href="Services.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Services</a></li>
+      <li><a href="Gallery.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Gallery</a></li>
+      <li><a href="Pricing.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Pricing</a></li>
+      <li><a href="Contacts.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
