@@ -1,0 +1,15 @@
+Put your photos in the same folder as index.html with these exact names (JPG).
+Anything missing shows a grey "Add photo" box until you add it.
+
+hero.jpg            Big photo at the top of the home page (landscape, at least 1600px wide)
+shop.jpg            Inside the shop, used in "About the shop" (landscape)
+barber-1.jpg        Team photo, barber 1 (portrait)
+barber-2.jpg        Team photo, barber 2 (portrait)
+barber-3.jpg        Team photo, barber 3 (portrait)
+service-cuts.jpg    Services page: haircuts (landscape)
+service-beard.jpg   Services page: beards and shaves (landscape)
+service-extras.jpg  Services page: extras (landscape)
+gallery-1.jpg … gallery-8.jpg   Gallery photos (any shape, square or portrait work best)
+
+Tip: keep each photo under 400 KB so the site loads fast on phones.
+Free tool to shrink photos: https://squoosh.app
